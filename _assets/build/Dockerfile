@@ -12,7 +12,7 @@ ADD . .
 RUN make statusgo BUILD_TAGS="$build_tags" BUILD_FLAGS="$build_flags"
 
 # Copy the binary to the second image
-FROM alpine:latest
+FROM alpine:3.15.4
 
 LABEL maintainer="support@status.im"
 LABEL source="https://github.com/status-im/status-go"
