@@ -12,7 +12,7 @@ RUN cd /go/src/github.com/status-im/status-go && \
     BUILD_TAGS="$build_tags" \
     BUILD_FLAGS="$build_flags"
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 LABEL maintainer="support@status.im"
 LABEL source="https://github.com/status-im/status-go"
