@@ -8,7 +8,7 @@ ADD . /go/src/github.com/status-im/status-go
 RUN cd /go/src/github.com/status-im/status-go && make statusd-prune
 
 # Copy the binary to the second image
-FROM alpine:latest
+FROM alpine:3.18.3
 
 LABEL maintainer="support@status.im"
 LABEL source="https://github.com/status-im/status-go"
