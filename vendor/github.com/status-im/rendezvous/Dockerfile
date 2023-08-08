@@ -6,7 +6,7 @@ RUN mkdir -p /go/src/github.com/status-im/rendezvous
 ADD . /go/src/github.com/status-im/rendezvous
 RUN cd /go/src/github.com/status-im/rendezvous && go build -o rendezvous ./cmd/server/
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk add --no-cache ca-certificates bash
 
