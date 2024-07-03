@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.22.4
 
 ADD . $GOPATH/src/github.com/karalabe/usb
 RUN cd $GOPATH/src/github.com/karalabe/usb && go install
